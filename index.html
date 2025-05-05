@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System Algorithm Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Operating System Algorithm Calculator</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Select an Algorithm</h2>
+            <select id="algorithm-selector">
+                <optgroup label="Process Scheduling Algorithms">
+                    <option value="fcfs">FCFS (First-Come-First-Serve)</option>
+                    <option value="priority-non-preemptive">Priority (Non-Preemptive)</option>
+                    <option value="priority-preemptive">Priority (Preemptive)</option>
+                    <option value="sjf-non-preemptive">SJF (Non-Preemptive)</option>
+                    <option value="sjf-preemptive">SJF (Preemptive)</option>
+                    <option value="round-robin">Round Robin</option>
+                </optgroup>
+                <optgroup label="Deadlock Avoidance Algorithm">
+                    <option value="bankers">Bankers Algorithm</option>
+                </optgroup>
+                <optgroup label="Disk Scheduling Algorithms">
+                    <option value="fcfs-disk">FCFS (First-Come-First-Serve)</option>
+                    <option value="sstf">SSTF</option>
+                    <option value="scan">SCAN</option>
+                    <option value="cscan">CSCAN</option>
+                    <option value="look">LOOK</option>
+                    <option value="clook">C-LOOK</option>
+                </optgroup>
+                <optgroup label="Page Replacement Algorithms">
+                    <option value="fifo">FIFO</option>
+                    <option value="lru">LRU</option>
+                    <option value="optimam">Optimam</option>
+                </optgroup>
+            </select>
+            <button id="load-algorithm">Load</button>
+        </section>
+
+        <section id="algorithm-container">
+            <h2>Algorithm Details</h2>
+            <div id="algorithm-form"></div>
+            <div id="algorithm-result"></div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
